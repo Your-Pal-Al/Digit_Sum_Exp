@@ -1,8 +1,9 @@
 """
 Author: A. Salas
-Project: 
+Project: Digit Sum testing
 Created:  Wed Jul 28 15:33:06 2021
-Description: 
+Description: Tracks occurence of each numbers (1-9) occurences
+             after raised to x power then calculating it's digit sum
 """
 
 #imports
