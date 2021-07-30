@@ -1,9 +1,8 @@
 """
 Author: A. Salas
-Project: Digit Sum testing
+Project: 
 Created:  Wed Jul 28 15:33:06 2021
-Description: Tracks occurence of each numbers (1-9) occurences
-             after raised to x power then calculating it's digit sum
+Description: 
 """
 
 #imports
@@ -34,30 +33,22 @@ if __name__ == "__main__":
     
     #this will hold instances
     temp_array = [0,0,0,0,0,0,0,0,0,0]
-    
-    #starting points of n and exponent
-    x = 2
-    y = 2
-    
+  
     start = time.perf_counter() #start tracking time
     for j in range(2,pow_range):
         for i in range(2, n_range):
-            result = main(x, y)
+            result = main(i, j)
             #print(f"Number #{x} | Result: {result}")
             temp_array[result] += 1
             if(result ==3 or result == 6):
                 print(f"NUMBER:  {i} | EXP: {j} | RESULT: {result}")
-            x+=1
-        y+=1
+ 
     stop = time.perf_counter() #stop time
     
     for i in range(len(temp_array)):
         print(f"i: {i} | Count: {temp_array[i]}")
         
-    print(f"Elapsed time: {stop-start}")     
-        
-        
-        
+    print(f"Elapsed time: {stop-start}")            
         
 #TODO: 
 
